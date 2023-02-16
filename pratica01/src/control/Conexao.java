@@ -8,13 +8,13 @@ public class Conexao {
 	
 	private static Connection conexao;
 	private static Conexao instancia;
-	private static final String DATABASE = "hr";
-	private static final String USER     = "aluno";
+	private static final String DATABASE = "dbpessoa";
+	private static final String USER     = "root";
 	private static final String PSW      = "aluno";
 	
 	private Conexao() {}
 	
-	public Conexao getInstacia() {
+	public static Conexao getInstacia() {
 		if (instancia == null) { instancia = new Conexao(); }
 		return instancia;	
 	}
