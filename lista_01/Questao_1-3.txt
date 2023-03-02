@@ -1,0 +1,26 @@
+1-Pesquise e descreva: no contexto de programação, o que é uma “biblioteca” e o que é uma “API”? Diferencie ambas utilizando as suas próprias palavras.
+R:
+Uma biblioteca é um conjunto de código fonte, funções e recursos que pode ser utilizado para desenvolver software. Essas bibliotecas são geralmente escritas em uma linguagem de programação específica e podem ser usadas por outros programas para realizar tarefas específicas. As bibliotecas geralmente incluem uma documentação que descreve como usar cada uma das funções que estão disponíveis.
+
+Por outro lado, uma API (Interface de Programação de Aplicativos) é uma maneira pela qual um aplicativo pode se comunicar com outro aplicativo ou serviço. As APIs podem ser usadas para permitir que diferentes aplicativos se comuniquem e compartilhem dados entre si, independentemente de como foram desenvolvidos ou em que linguagem de programação foram escritos. As APIs geralmente fornecem uma documentação que descreve as operações que podem ser realizadas e como elas devem ser usadas.
+
+A principal diferença entre as bibliotecas e as APIs é que as bibliotecas são usadas para fornecer uma funcionalidade para um programa específico, enquanto as APIs são usadas para permitir a comunicação entre aplicativos. Além disso, as bibliotecas são geralmente usadas dentro de um programa, enquanto as APIs são acessadas por meio de solicitações de rede.
+
+
+2-Defina brevemente e descreva a razão para se utilizar os padrões de projetos abaixo:
+A)MVC
+R: (Model-View-Controller) é um padrão de projeto que separa a lógica de negócios, a apresentação e o controle do fluxo de dados em um aplicativo. O modelo é responsável pelos dados e a lógica de negócios, a visualização é responsável pela exibição dos dados e a interação do usuário e o controlador é responsável por gerenciar a comunicação entre o modelo e a visualização. Usar o padrão MVC ajuda a criar um código mais organizado, facilita a manutenção e a evolução do software, além de melhorar a modularidade e a reusabilidade do código.
+
+B)DAO
+R: (Data Access Object) é um padrão de projeto que separa a lógica de acesso a dados do restante do aplicativo. O DAO encapsula os detalhes da comunicação com o banco de dados, permitindo que o restante do aplicativo possa usar uma interface mais simples e abstrata para acessar os dados. Isso melhora a manutenção do aplicativo e permite que diferentes fontes de dados possam ser usadas sem afetar o restante do código.
+
+C)Singleton
+R: É um padrão de projeto que permite que apenas uma instância de uma classe seja criada em toda a aplicação. Isso é útil em casos em que há apenas um recurso disponível e é preciso garantir que todas as partes do aplicativo estejam acessando a mesma instância. Isso ajuda a garantir a consistência do estado do aplicativo e a melhorar o desempenho, pois não há necessidade de criar várias instâncias da mesma classe.
+
+
+3-O que é JDBC e como ele se relaciona com bancos de dados e a programação em Java? 
+R: É uma API padrão da linguagem Java que fornece um conjunto de classes e métodos para permitir que aplicativos Java se conectem e interajam com bancos de dados relacionais.
+
+O JDBC é usado para executar consultas em bancos de dados, atualizar registros, obter metadados de banco de dados e manipular dados em geral. Ele fornece uma camada de abstração entre a aplicação e o banco de dados, permitindo que os desenvolvedores escrevam aplicativos que possam ser usados com diferentes bancos de dados, sem precisar alterar o código da aplicação.
+
+
