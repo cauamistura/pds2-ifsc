@@ -11,7 +11,7 @@ public class Conexao {
 		private static final String USER     = "root";
 		private static final String PSW      = "aluno";
 		
-		Conexao() {}
+		public Conexao() {}
 		
 		public static Conexao getInstacia() {
 			if (instancia == null) { instancia = new Conexao(); }

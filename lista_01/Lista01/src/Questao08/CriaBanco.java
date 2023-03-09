@@ -25,11 +25,11 @@ public class CriaBanco {
 					+ "  `BDIDADE` ITEGER OT ULL,"
 					+ "  PRIMARY KEY (`BDCPF`))"
 					+ "EGIE = IoDB;";
-			String WSQL = "SELECT * FROM TPESSOA";
 			ResultSet rs = stm.executeQuery(wQuery);	
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		FConexao.fecharConnection();
+		
 	}
 }
