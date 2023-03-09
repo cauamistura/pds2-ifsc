@@ -25,7 +25,7 @@ public class Conexao {
 			return conexao;		
 		}
 		
-		public static boolean fecharConnection() { 
+		public boolean fecharConnection() { 
 			try { conexao.close(); } 
 			catch (SQLException e) {
 				e.printStackTrace();
