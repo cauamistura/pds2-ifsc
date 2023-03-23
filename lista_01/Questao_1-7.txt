@@ -23,4 +23,36 @@ R: É uma API padrão da linguagem Java que fornece um conjunto de classes e mé
 
 O JDBC é usado para executar consultas em bancos de dados, atualizar registros, obter metadados de banco de dados e manipular dados em geral. Ele fornece uma camada de abstração entre a aplicação e o banco de dados, permitindo que os desenvolvedores escrevam aplicativos que possam ser usados com diferentes bancos de dados, sem precisar alterar o código da aplicação.
 
+4 - O que significa “CRUD” e como ele se relaciona com os quatro métodos que implementamos em nossas
+classes DAO?
+R:
+CRUD é um acrônimo para Create, Read, Update e Delete. Esses são os quatro principais tipos de operações que podem ser realizadas em um banco de dados ou sistema de gerenciamento de informações.
 
+.Create (Criação): É a operação de criar um novo registro no banco de dados.
+.Read   (Leitura): É a operação de ler (recuperar) um registro do banco de dados.
+.Update (Atualização): É a operação de atualizar um registro existente no banco de dados.
+.Delete (Exclusão): É a operação de excluir um registro existente no banco de dados.
+
+5 - Explique brevemente e com suas palavras qual a utilidade das três classes abaixo:
+a. Connection
+b. PreparedStatement
+c. Statement
+
+R:
+A)Connection: Essa classe é usada para estabelecer uma conexão com um banco de dados. Após criar uma instância de Connection, é possível usar métodos para executar consultas e atualizações de dados. A classe Connection é importante porque é necessário estabelecer uma conexão antes de poder executar qualquer operação em um banco de dados
+
+B)PreparedStatement: Essa classe é usada para executar instruções SQL que contêm parâmetros variáveis. Por exemplo, se você quiser buscar um registro específico em um banco de dados, pode criar um PreparedStatement com um placeholder (um espaço reservado para um valor específico) e, em seguida, definir o valor desse espaço reservado com um método. O PreparedStatement é útil porque permite executar a mesma consulta com diferentes valores para os parâmetros, o que melhora a performance e segurança contra injeção de SQL
+
+C)Statement: Essa classe é usada para executar instruções SQL que não contêm parâmetros variáveis. Por exemplo, se você quiser excluir todos os registros de uma tabela, pode usar um Statement para executar a operação. O Statement é útil para consultas simples que não requerem placeholders.
+
+6 - Considere a execução de uma query SQL no banco de dados. Se esperamos um retorno de dados do banco
+de dados devemos usar a classe Statement ou PreparedStatement? Justifique.
+R:
+É recomendado utilizar a classe PreparedStatement em vez da classe Statement.
+A classe PreparedStatement permite que você crie uma instrução SQL parametrizada, onde os valores dos parâmetros são definidos dinamicamente durante a execução da consulta. Isso torna a consulta mais segura contra ataques de injeção de SQL
+
+7 - Com as suas próprias palavras, diferencie SWING do WINDOWBUILDER
+R:
+SWING é uma biblioteca de componentes GUI em Java que foi introduzida na versão 1.2 do Java Development Kit (JDK). SWING fornece uma ampla variedade de componentes, como botões, campos de texto, tabelas e painéis, além de layout managers que permitem que você organize esses componentes na tela. SWING é um conjunto de classes e APIs do Java que permite criar GUIs facilmente.
+
+WINDOWBUILDER, por outro lado, é uma ferramenta gráfica usada para criar GUIs em Java. Ele é um plugin para Eclipse que permite criar GUIs de forma visual, com arrastar e soltar de componentes, em vez de escrever o código manualmente. O WINDOWBUILDER pode ser usado para criar GUIs SWING, bem como outras tecnologias GUI em Java, como SWT e AWT.
